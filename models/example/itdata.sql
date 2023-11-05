@@ -2,7 +2,7 @@
 
 WITH FilteredData AS (
     SELECT * 
-    FROM covid_epidemiology C
+    FROM GenomeSchema.covid_epidemiology C
     WHERE key = 'IT'
 )
 

@@ -3,7 +3,7 @@ WITH FilteredData AS (
       cast(key as varchar) as "mykey",
       date as "mydate",
       new_tested as mynew_tested
-      FROM covid_epidemiology C
+      FROM GenomeSchema.covid_epidemiology C
       WHERE key = 'IT'
 )
 
