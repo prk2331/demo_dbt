@@ -2,7 +2,7 @@
 
 WITH FilteredData AS (
     SELECT * 
-    FROM {{ ref('covid_epidemiology') }} C
+    FROM genomeschema.covid_epidemiology C
     WHERE key = 'IT'
 )
 
